@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace; /* Fuente de estilo digital */
+    background-color: #101218;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1c21, #101218);
+}
+
+.converter-container {
+    background-color: #22262e;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.3);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #00ccff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.converter-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.6);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #00ccff; /* Azul cibernético */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 10px #00ccff;
+    border-bottom: 2px solid #00ccff;
+    padding-bottom: 0.5rem;
+}
+
+.input-section {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #00ccff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 300;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 5px;
+    background-color: #1c2025;
+    color: #e0e0e0;
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus, input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0px 0px 10px #00ffcc;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #00ffcc;
+    color: #101218;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff99;
+    transform: scale(1.05);
+}
+
+#conversion-result {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: #ffcc00; /* Color amarillo robótico */
+    text-shadow: 0px 0px 8px #ffcc00;
+    font-weight: bold;
+}
+
+#error-message {
+    color: #ff4d4d;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
